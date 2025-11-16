@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meters to Feet</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="navBar"></div>
+
+<h1 style="margin-top: 100px">Meters to Feet Converter</h1>
+
+<div class="converter">
+  <label for="textMeter">Meter</label><br>
+  <input type="number" id="textMeter" placeholder="0"><br>
+  <label for="textFeet">Feet</label><br>
+  <input type="number" id="textFeet" placeholder="0" readonly> <br>
+
+  <button onclick="metersToFeet();">Convert</button>
+</div>
+
+<script src="js/metersToFeet.js"></script>
+<script src="js/navigationBar.js"></script>
+<script>
+  loadNavbar()
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Income Tax Calculator</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="navBar"></div>
+
+  <h1 style="margin-top: 40px">Income Tax Calculator</h1>
+
+  <div class="incomeTaxCalculator">
+
+    <div class="field">
+      <label for="monthlySalary">Taxable Income</label>
+      <input type="text" id="monthlySalary" placeholder="₱0" oninput="formatCurrency(this)">
+    </div>
+
+    <div class="field">
+      <button onclick="incomeTaxCalculator()">Calculate</button>
+    </div>
+
+    <div class="field">
+      <label for="incomeTax">Income Tax</label>
+      <input type="text" id="incomeTax" placeholder="₱0" readonly>
+    </div>
+
+  </div>
+
+  <script src="js/incomeTaxCalculator.js"></script>
+  <script src="js/navigationBar.js"></script>
+  <script>
+    loadNavbar()
+  </script>
+
+</body>
+</html>

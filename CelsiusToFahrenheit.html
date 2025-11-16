@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Celsius to Fahrenheit</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="navBar"></div>
+
+  <h1 style="margin-top: 100px">Celsius to Fahrenheit Converter</h1>
+
+  <div class="converter">
+    <label for="textCelsius">Celsius</label><br>
+    <input type="text" id="textCelsius" placeholder="0°"><br>
+    <label for="textFahr">Fahrenheit</label><br>
+    <input type="text" id="textFahr" placeholder="0°" readonly> <br>
+
+    <button onclick="celToFahr();">Convert</button>
+  </div>
+
+  <script src="js/celsiusToFahrenheit.js"></script>
+  <script src="js/navigationBar.js"></script>
+  <script>
+    loadNavbar()
+  </script>
+
+</body>
+</html>
+
